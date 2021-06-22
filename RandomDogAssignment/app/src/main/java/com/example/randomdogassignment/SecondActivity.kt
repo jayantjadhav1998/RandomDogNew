@@ -18,7 +18,7 @@ import java.io.IOException
 import java.net.URL
 
 
-class MainActivity : AppCompatActivity() {
+class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
                  val dogArrayList = fetchDogArrayList()
                  Log.i("Array Resoponse-->>", dogArrayList.toString());
                  runOnUiThread {
-                     val recyclerAdapter = RecyclerAdapter(this@MainActivity, dogArrayList)
-                     recyclerview.layoutManager = LinearLayoutManager(this@MainActivity)
+                     val recyclerAdapter = RecyclerAdapter(this@SecondActivity, dogArrayList)
+                     recyclerview.layoutManager = LinearLayoutManager(this@SecondActivity)
                      recyclerview.adapter = recyclerAdapter
                      recyclerAdapter.notifyDataSetChanged()
                      Log.i("vishal", response.toString())
