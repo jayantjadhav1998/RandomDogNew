@@ -20,7 +20,7 @@ import java.net.URL
 
 class RecyclerAdapter(val context:Context,val dogArrayList:ArrayList<DogModel>) :RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
-   var string1:String="Jayant"
+   var string1:String="Jay"
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var itemImage: ImageView = itemView.findViewById(R.id.imageView)
     }
